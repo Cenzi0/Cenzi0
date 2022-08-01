@@ -4,7 +4,8 @@ q1'''
     floats, return a list with each of the floats in the
     argument as elements in the list.
     '''
-    def q1(floatstr):
+   
+   def q1(floatstr):
       List = []
       for i in floatstr.split('.')
             List.append(float(i))
@@ -21,6 +22,7 @@ List comp
     Given the variable length argument list, return the average
     of all the arguments as a float
     '''
+    
     Return sum(args)/len(args)
 
 
@@ -38,7 +40,9 @@ List comp
     Given an input string, return a list containing the ordinal numbers of
     each character in the string in the order found in the input string.
     '''
-    def q4(strng):
+   
+   
+   def q4(strng):
         dumb = []
         for i in strng:
                 dumb.append(ord(strng))
@@ -58,6 +62,7 @@ List comp
     Given an input string, return a tuple with each element in the tuple
     containing a single word from the input string in order.
     '''
+
 
 Return tuple(strng.split())
 
@@ -88,6 +93,8 @@ Q6 '''
     How the above result was computed:
     (289.99 * 5) + (363.50 * 3)
     '''
+
+
 Total = 0
 For product, quantity in order:
     Total += catalog[product] * quantity
@@ -96,11 +103,15 @@ Return total
 *catalog is our dictionary, we are going to reference the product in said dictionary to get 
 
 
+
+
 '''
     TLO: 112-SCRPY005, LSA 1
     Given a filename, open the file and return the length of the first line
     in the file excluding the line terminator.
     '''
+    
+    
     def q7(filename):
         Lines = []
         with open(filename, 'r') as fp:
@@ -119,6 +130,9 @@ Return total
     the list. If "stop" is not found in the list, write the entire list to
     the file on separate lines.
     '''
+
+
+
 Def q8(filename,lst):
     With open(filename, ‘w’) as fp:
         For i in lst:
@@ -137,6 +151,8 @@ Def q8(filename,lst):
     1600-2059 "Good Evening"
     2100-0259 "Good Night"
     '''
+
+
 def q9(miltime):
     if miltime >= 300 and miltime <= 1159:
             return "Good Morning"
@@ -156,6 +172,7 @@ def q9(miltime):
     negative, return False.
     '''
 
+
 def q10(numlist):
 for i in numlist:
             if i < 0:
@@ -173,6 +190,8 @@ def q1(sentence):
     my = sentence.split(' ')
     almost = my[::-1]
     return ' '.join(almost)
+    
+    
     '''
     Given a string of multiple words separated by single spaces,
     return a new string with the sentence reversed. The words
@@ -181,6 +200,8 @@ def q1(sentence):
     string should be 'strategy on masterpiece a as accepted is it'.
     '''
     pass
+
+
 
 
 def q2(n):
@@ -195,6 +216,8 @@ def q2(n):
     pass
 
 
+
+
 def q3(lst0, lst1):
     newL = []
     for i in lst0:
@@ -205,13 +228,17 @@ def q3(lst0, lst1):
    
 OR
     Return sorted(lst0+lst1, reverse=True)
-    '''
+   
+   
+   '''
     Given two lists of integers, return a sorted list that contains
     all integers from both lists in descending order. For example,
     given [3,4,9] and [8,1,5] the returned list should be [9,8,5,4,3,1].
     The returned list may contain duplicates.
     '''
     pass
+
+
 
 def q4(s1,s2,s3):
     sumting = (s1 + s2 + s3)/3
@@ -221,11 +248,16 @@ def q4(s1,s2,s3):
             return 'NOGO'
 OR
     Return ‘GO’ if (s1+s2+s3)/3 >50 else ‘NOGO’
+    
+    
     '''
     Given 3 scores in the range [0-100] inclusive, return 'GO' if
     the average score is greater than 50. Otherwise return 'NOGO'.
     '''
     pass
+
+
+
 def q5(integer, limit):
     mylist = [0]
     dumb = integer
@@ -245,6 +277,8 @@ Return multiples
 OR
 Return [for i in range(0,limit+1) if (i%integer==0) and (i%2 ==0)
  
+    
+    
     '''
     Given an integer and limit, return a list of even multiples of the
     integer up to and including the limit. For example, if integer==3 and
@@ -288,12 +322,15 @@ def q7(lst):
             else:
                    return i
 
-    '''
+   
+   
+   '''
     Return the first duplicate value in the given list.
     For example, if given [5,7,9,1,3,7,9,5], the returned value should
     be 7.
     '''
     pass
+
 
 
 def q8(strng):
@@ -304,7 +341,9 @@ OR
         If len(i) < smol:
             Smol = len(i)
     Return smol
-    '''
+   
+   
+   '''
     Given a sentence as a string with words being separated by a single space,
     return the length of the shortest word.
     '''
@@ -318,7 +357,10 @@ def q9(strng):
             chars.append(i)
 
     return chr(int(''.join(chars)))
-    '''
+   
+   
+   
+   '''
     Given an alphanumeric string, return the character whose ascii value
     is that of the integer represenation of all of the digits in the string
     concatenated in the order in which they appear. For example, given
@@ -327,13 +369,16 @@ def q9(strng):
     '''
     pass
 
+
 def q10(arr):
    
     for i in range(0,len(arr)-1):
         if arr[i+1] - arr[i] != 1:
             return arr[+1]
 
-    '''
+   
+   
+   '''
     Given a list of positive integers sorted in ascending order, return
     the first non-consecutive value. If all values are consecutive, return
     None. For example, given [1,2,3,4,6,7], the returned value should be 6.
@@ -358,6 +403,7 @@ Take all unique letters from 2 strings and output a sorted string to the console
 ***all join statements are what symbol/delimiter you are using to join the list with, followed by .join(your list)
 
 
+
 TYPECASTING ITEMS IN A LIST
 
 return [int(x) for x in list]
@@ -372,6 +418,7 @@ Find the shortest word
     return len(List[-1])
 
 
+
 list(mylist[index]) == the
 
 
@@ -382,6 +429,7 @@ See if the fourth octet falls into a range
         print(‘this ip falls within that range’)
 
 
+
 Mylist[start:stop:step]
     Reference a group of indices
 Mylist[-1]
@@ -389,11 +437,13 @@ Mylist[-1]
 Mylist[-2:]
     Starts at second to last and steps to the end
 
+
 Mylist[::-1]
     Steps backwards (reversed
 range(start:stop:step)
 Mylist = list(range(0,10))
 Mylist = [0,1,2,3,4,5,6,7,8,9]
+
 
 First = ‘aaron’
 Middle = ‘andrew’
@@ -401,6 +451,7 @@ Last = ‘anderson’
 Domain = ‘cornetto’
 SHORTHAND FORMAT
 f’{first}.{middle[0]}.{last}@{domain}.com’
+
 
 myDict = {}
 myDict[‘Pvt’] = ‘E-1’
@@ -413,12 +464,14 @@ For i in myDict:
     Print(MyDict[i])
 
 
+
 Myroster = [‘PFC’, LCpl, LCpl , Pvt, PFC, Pvt, Sgt’]
     For i in myRoster:
         If i in myDict:
             myDict[i] +=1
         Else :
             myDict[i] = 1
+
 
 FILE IO
 With open (‘myfile.txt’, ‘r’) as fp:
@@ -437,6 +490,7 @@ With open(outfile, ‘w’) as fp1:
 With open (infile, ‘r’) as fp:
     With open(outfile, ‘w’) as fp1:
         fp1.writelines(fp.readlines())
+
 
 ***you can index reference read lines to only get the lines that you want
 
